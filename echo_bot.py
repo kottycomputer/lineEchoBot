@@ -51,7 +51,7 @@ def handle_text_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             [
-                TextSendMessage(text="愛しの" + profile.display_name),
+                TextSendMessage(text="愛しの" + profile.display_name+"へ♡"),
                 TextSendMessage(text="君は、”" + text+"”って言うけどさ、僕は大好きだよ。")
             ],
         )
